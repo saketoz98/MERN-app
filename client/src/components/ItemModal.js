@@ -83,7 +83,10 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch=>{
-    addItem : ()=>{dispatch(actionCreator.addItem)}
+  return{
+    addItem : (item)=>dispatch(actionCreator.addItem(item))
+
+  }
 }
 
 export default connect(

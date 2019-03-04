@@ -54,8 +54,8 @@ const mapStateToProps = state=>{
 
 const mapDispatchToProps = dispatch=>{
   return {
-    getItems : ()=>dispatch(actionCreators.getItems),
-    deleteItem : ()=>dispatch(actionCreators.deleteItem)
+    getItems : ()=>dispatch(actionCreators.getItems()),
+    deleteItem : (id)=>dispatch(actionCreators.deleteItem(id))
   }
 }
 
